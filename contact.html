@@ -1,167 +1,196 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Liron Reiter — Contact</title>
-  <style>
-    :root{
-      --max: 1100px;
-      --pad: 56px;
-      --text: #111;
-      --muted:#555;
-      --rule:#111;
-    }
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      color:var(--text);
-      background:#fff;
-    }
-    a{ color:inherit; }
-    .wrap{
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-    header{
-      margin-bottom: 28px;
-    }
-    .name{
-      letter-spacing: 0.18em;
-      font-weight: 700;
-      font-size: 34px;
-      line-height: 1.1;
-      text-transform: uppercase;
-      margin: 0 0 6px;
-    }
-    .tag{
-      letter-spacing: 0.12em;
-      font-size: 12px;
-      text-transform: uppercase;
-      margin: 0;
-    }
-    nav{
-      margin-top: 18px;
-    }
-    .btn{
-      display:inline-block;
-      font-size: 12px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      text-decoration:none;
-      padding: 8px 14px;
-      border: 1px solid var(--rule);
-      margin-right: 10px;
-    }
-    .btn.active{
-      background:#111;
-      color:#fff;
-    }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Liron Reiter — Contact</title>
+    <style>
+      :root {
+        --max: 1100px;
+        --pad: 56px;
+        --text: #111;
+        --muted: #555;
+        --rule: #111;
+      }
 
-    .grid{
-      display:grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 56px;
-      align-items:start;
-      margin-top: 28px;
-    }
-    h3{
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      font-size: 12px;
-      margin: 0 0 10px;
-    }
-    .email{
-      margin: 0 0 26px;
-      font-size: 13px;
-    }
-    .bio{
-      font-size: 12.5px;
-      line-height: 1.55;
-      color: var(--muted);
-      margin: 0 0 28px;
-      white-space: pre-wrap;
-    }
+      * {
+        box-sizing: border-box;
+      }
 
-    /* Press should look like bio/email sizing, but NOT preserve whitespace */
-.pressline{
-  font-size: 12.5px;
-  line-height: 1.55;
-  color: var(--muted);
-  margin: 0 0 28px;
-  white-space: normal;   /* overrides pre-wrap */
-  padding-left: 0;
-  text-indent: 0;
-}
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: var(--text);
+        background: #fff;
+      }
 
-.pressline a{
-  color: inherit;
-  text-decoration: underline;
-}
+      a {
+        color: inherit;
+      }
 
-    .rule{
-      height:1px;
-      background: var(--rule);
-      width: 100%;
-      margin-top: 22px;
-      opacity: 0.9;
-    }
-    .portrait{
-      width:100%;
-      max-width: 440px;
-      aspect-ratio: 4 / 5;
-      background:#eee;
-      object-fit: cover;
-      display:block;
-    }
+      .wrap {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 48px 24px 80px;
+      }
 
-    @media (max-width: 900px){
-      .grid{ grid-template-columns: 1fr; gap: 28px; }
-      .portrait{ max-width: 520px; }
-    }
-  </style>
-</head>
+      header {
+        margin-bottom: 28px;
+      }
 
-<body>
-  <div class="wrap">
-    <header>
-      <h1 class="name">LIRON REITER</h1>
-      <p class="tag">FILMMAKER / EDITOR</p>
+      .name {
+        letter-spacing: 0.18em;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin: 0 0 6px;
+      }
 
-      <nav>
-        <a class="btn" href="index.html">Work</a>
-        <a class="btn active" href="contact.html">Contact</a>
-      </nav>
-    </header>
+      .tag {
+        letter-spacing: 0.12em;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin: 0;
+      }
 
-    <main class="grid">
-      <section>
-        <h3>Contact</h3>
-        <p class="email">
-          <a href="mailto:lironreiternyc@gmail.com">lironreiternyc@gmail.com</a>
-        </p>
+      nav {
+        margin-top: 18px;
+      }
 
-        <h3>Bio</h3>
-        <p class="bio">Liron Reiter is a filmmaker and editor living and working in New York City. Her work ranges from web series to short and feature length documentaries and narrative films.
+      .btn {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 8px 14px;
+        border: 1px solid var(--rule);
+        margin-right: 10px;
+      }
+
+      .btn.active {
+        background: #111;
+        color: #fff;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 56px;
+        align-items: start;
+        margin-top: 28px;
+      }
+
+      h3 {
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin: 0 0 10px;
+      }
+
+      .email {
+        margin: 0 0 26px;
+        font-size: 13px;
+      }
+
+      .bio {
+        font-size: 12.5px;
+        line-height: 1.55;
+        color: var(--muted);
+        margin: 0 0 28px;
+        white-space: pre-wrap;
+      }
+
+      /* Press should look like bio/email sizing, but NOT preserve whitespace */
+      .pressline {
+        font-size: 12.5px;
+        line-height: 1.55;
+        color: var(--muted);
+        margin: 0 0 28px;
+        white-space: normal; /* overrides pre-wrap */
+        padding-left: 0;
+        text-indent: 0;
+      }
+
+      .pressline a {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      .rule {
+        height: 1px;
+        background: var(--rule);
+        width: 100%;
+        margin-top: 22px;
+        opacity: 0.9;
+      }
+
+      .portrait {
+        width: 100%;
+        max-width: 440px;
+        aspect-ratio: 4 / 5;
+        background: #eee;
+        object-fit: cover;
+        display: block;
+      }
+
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+          gap: 28px;
+        }
+
+        .portrait {
+          max-width: 520px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <h1 class="name">LIRON REITER</h1>
+        <p class="tag">FILMMAKER / EDITOR</p>
+
+        <nav>
+          <a class="btn" href="index.html">Work</a>
+          <a class="btn active" href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <main class="grid">
+        <section>
+          <h3>Contact</h3>
+          <p class="email">
+            <a href="mailto:lironreiternyc@gmail.com">lironreiternyc@gmail.com</a>
+          </p>
+
+          <h3>Bio</h3>
+          <p class="bio">Liron Reiter is a filmmaker and editor living and working in New York City. Her work ranges from web series to short and feature length documentaries and narrative films.
 
 Liron worked on A Ballerina's Tale which premiered at The Tribeca Film Festival in 2015. The film follows the rise of Misty Copeland as she attempts to become the first African American principal dancer in a national ballet company. In 2018 she cut her first narrative feature, Yellow Rose, a film about an undocumented Filipino-American teen pursuing her dream to become a country music singer in Texas. The film won the Grand Jury Prize and audience award at the Asian Pacific Film Festival, the Grand Jury Prize and audience award at the Urban World Festival, and the Jury Prize at the Bentonville Film Festival. Liron's future projects include a true crime documentary titled The Three Lives of David Wong which received the Bertha Foundation and Creative Capital grants. The documentary short tells the story of a wrongly convicted, undocumented Chinese man facing a life sentence for a crime he did not commit and his 20 year fight for justice.
 
 Liron graduated from The University of Southern California film school in 2002. She worked in production on commercials and Hollywood films before moving to New York in 2008 to focus on independent filmmaking.</p>
 
-        <h3>Press</h3>
-<p class="pressline">
-  <a href="https://variety.com/2020/artisans/production/yellow-rose-editor-country-music-1234797783/" target="_blank" rel="noopener">How the ‘Yellow Rose’ Editor Used Country Music Cues to Cut Bittersweet Tale of Young Immigrant</a>, Variety, October 2020
-</p>
-        
-        <div class="rule"></div>
-      </section>
+          <h3>Press</h3>
+          <p class="pressline">
+            <a
+              href="https://variety.com/2020/artisans/production/yellow-rose-editor-country-music-1234797783/"
+              target="_blank"
+              rel="noopener"
+              >How the ‘Yellow Rose’ Editor Used Country Music Cues to Cut Bittersweet Tale of Young Immigrant</a
+            >, Variety, October 2020
+          </p>
 
-      <aside>
-        <img class="portrait" src="portrait.jpg" alt="Portrait of Liron Reiter" />
-      </aside>
-    </main>
-  </div>
-</body>
+          <div class="rule"></div>
+        </section>
+
+        <aside>
+          <img class="portrait" src="portrait.jpg" alt="Portrait of Liron Reiter" />
+        </aside>
+      </main>
+    </div>
+  </body>
 </html>
