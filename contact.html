@@ -1,4 +1,153 @@
-<nav>
-  <a class="btn" href="index.html">Work</a>
-  <a class="btn active" href="contact.html">Contact</a>
-</nav>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Liron Reiter — Contact</title>
+  <style>
+    :root{
+      --max: 1100px;
+      --pad: 56px;
+      --text: #111;
+      --muted:#555;
+      --rule:#111;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color:var(--text);
+      background:#fff;
+    }
+    a{ color:inherit; }
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    header{
+      margin-bottom: 28px;
+    }
+    .name{
+      letter-spacing: 0.18em;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      margin: 0 0 6px;
+    }
+    .tag{
+      letter-spacing: 0.12em;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    nav{
+      margin-top: 18px;
+    }
+    .btn{
+      display:inline-block;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration:none;
+      padding: 8px 14px;
+      border: 1px solid var(--rule);
+      margin-right: 10px;
+    }
+    .btn.active{
+      background:#111;
+      color:#fff;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 56px;
+      align-items:start;
+      margin-top: 28px;
+    }
+    h3{
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin: 0 0 10px;
+    }
+    .email{
+      margin: 0 0 26px;
+      font-size: 13px;
+    }
+    .bio{
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: var(--muted);
+      margin: 0 0 28px;
+      white-space: pre-wrap;
+    }
+    .press a{
+      color: var(--muted);
+      text-decoration: underline;
+    }
+    .rule{
+      height:1px;
+      background: var(--rule);
+      width: 100%;
+      margin-top: 22px;
+      opacity: 0.9;
+    }
+    .portrait{
+      width:100%;
+      max-width: 440px;
+      aspect-ratio: 4 / 5;
+      background:#eee;
+      object-fit: cover;
+      display:block;
+    }
+
+    @media (max-width: 900px){
+      .grid{ grid-template-columns: 1fr; gap: 28px; }
+      .portrait{ max-width: 520px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1 class="name">LIRON REITER</h1>
+      <p class="tag">FILMMAKER / EDITOR</p>
+
+      <nav>
+        <a class="btn" href="index.html">Work</a>
+        <a class="btn active" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <section>
+        <h3>Contact</h3>
+        <p class="email">
+          <a href="mailto:lironreiternyc@gmail.com">lironreiternyc@gmail.com</a>
+        </p>
+
+        <h3>Bio</h3>
+        <p class="bio">[PASTE BIO TEXT HERE]</p>
+
+        <h3>Press</h3>
+        <p class="press bio" style="margin-bottom:0;">
+          <a href="[PASTE PRESS LINK URL HERE]" target="_blank" rel="noopener">[PASTE PRESS LINK TITLE HERE]</a>
+          <br/>
+          <span style="color:#777;">[OPTIONAL: Outlet, Month Year]</span>
+        </p>
+
+        <div class="rule"></div>
+      </section>
+
+      <aside>
+        <!-- Replace portrait.jpg with your image filename in the repo -->
+        <img class="portrait" src="portrait.jpg" alt="Portrait of Liron Reiter" />
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
