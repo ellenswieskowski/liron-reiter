@@ -1,4 +1,143 @@
-<nav>
-  <a class="btn active" href="index.html">Work</a>
-  <a class="btn" href="contact.html">Contact</a>
-</nav>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Liron Reiter — Work</title>
+    <style>
+      :root {
+        --max: 1100px;
+        --text: #111;
+        --muted: #555;
+        --rule: #111;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: var(--text);
+        background: #fff;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .wrap {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 48px 24px 80px;
+      }
+
+      header {
+        margin-bottom: 28px;
+      }
+
+      .name {
+        letter-spacing: 0.18em;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin: 0 0 6px;
+      }
+
+      .tag {
+        letter-spacing: 0.12em;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      nav {
+        margin-top: 18px;
+      }
+
+      .btn {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 8px 14px;
+        border: 1px solid var(--rule);
+        margin-right: 10px;
+      }
+
+      .btn.active {
+        background: #111;
+        color: #fff;
+      }
+
+      /* Work grid */
+
+      .work-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+        margin-top: 40px;
+      }
+
+      .work-item {
+        aspect-ratio: 16 / 9;
+        background: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .work-item:hover {
+        background: #e0e0e0;
+      }
+
+      @media (max-width: 900px) {
+        .work-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .work-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <h1 class="name">LIRON REITER</h1>
+        <p class="tag">FILMMAKER / EDITOR</p>
+
+        <nav>
+          <a class="btn active" href="index.html">Work</a>
+          <a class="btn" href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="work-grid">
+          <!-- Replace hrefs with Vimeo links and background images later -->
+
+          <a class="work-item" href="#" target="_blank" rel="noopener">Yellow Rose</a>
+          <a class="work-item" href="#" target="_blank" rel="noopener">The Three Lives of David Wong</a>
+          <a class="work-item" href="#" target="_blank" rel="noopener">A Ballerina’s Tale</a>
+          <a class="work-item" href="#" target="_blank" rel="noopener">Eyes of the Moon</a>
+          <a class="work-item" href="#" target="_blank" rel="noopener">#FreedomForGirls</a>
+          <a class="work-item" href="#" target="_blank" rel="noopener">Finding the Funk</a>
+          <a class="work-item" href="#" target="_blank" rel="noopener">Superschool</a>
+          <a class="work-item" href="#" target="_blank" rel="noopener">Peloton</a>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
