@@ -85,17 +85,21 @@
       white-space: pre-wrap;
     }
 
-    /* Press: remove any left indent + match spacing after heading */
-    .press{
-      padding-left: 0;
-      text-indent: 0;
-      margin-top: 0;
-    }
-    .pressline a{
-  text-decoration: underline;
-  color: inherit;
+    /* Press should look like bio/email sizing, but NOT preserve whitespace */
+.pressline{
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0 0 28px;
+  white-space: normal;   /* overrides pre-wrap */
+  padding-left: 0;
+  text-indent: 0;
 }
 
+.pressline a{
+  color: inherit;
+  text-decoration: underline;
+}
 
     .rule{
       height:1px;
@@ -147,11 +151,8 @@ Liron worked on A Ballerina's Tale which premiered at The Tribeca Film Festival 
 Liron graduated from The University of Southern California film school in 2002. She worked in production on commercials and Hollywood films before moving to New York in 2008 to focus on independent filmmaking.</p>
 
         <h3>Press</h3>
-<p class="bio pressline">
-  <a href="https://variety.com/2020/artisans/production/yellow-rose-editor-country-music-1234797783/"
-     target="_blank" rel="noopener">
-    How the ‘Yellow Rose’ Editor Used Country Music Cues to Cut Bittersweet Tale of Young Immigrant
-  </a>, Variety, October 2020
+<p class="pressline">
+  <a href="https://variety.com/2020/artisans/production/yellow-rose-editor-country-music-1234797783/" target="_blank" rel="noopener">How the ‘Yellow Rose’ Editor Used Country Music Cues to Cut Bittersweet Tale of Young Immigrant</a>, Variety, October 2020
 </p>
         
         <div class="rule"></div>
